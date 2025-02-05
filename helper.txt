@@ -1,0 +1,38 @@
+CPU insertion & lookup test command:
+.\cpu_kv_store.exe
+
+Results: 
+cpu_kv_store.cpp
+Microsoft (R) Incremental Linker Version 14.37.32825.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:cpu_kv_store.exe
+cpu_kv_store.obj
+PS C:\Users\aygun\Desktop\PSHA\Kursov Proekt BD- keys\GPU based Key-Value Store (KVS)> .\cpu_kv_store.exe
+>>
+CPU Insert Time: 0.37489 sec
+CPU Lookup Time: 0.161414 sec
+
+
+GPU insertion & lookup test command:
+
+.\gpu_kv_store.exe
+
+Results:
+PS C:\Users\aygun\Desktop\PSHA\GPU_KVS> .\gpu_kv_store.exe
+>>
+Starting GPU Key-Value Store Test...
+GPU Insert Time: 0.594944 ms
+GPU Lookup Time: 0.025600 ms
+GPU Test Completed.
+
+
+2nd Test results with 10000 units:
+
+PS C:\Users\aygun\Desktop\PSHA\GPU_KVS> .\cpu_kv_store.exe
+CPU Insert Time: 0.387611 sec
+CPU Lookup Time: 0.140861 sec
+PS C:\Users\aygun\Desktop\PSHA\GPU_KVS> .\gpu_kv_store.exe
+Starting GPU Key-Value Store Test...
+GPU Insert Time: 0.513024 ms
+GPU Lookup Time: 0.076800 ms
